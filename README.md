@@ -1,6 +1,16 @@
-# @dansp/ui-met8-vue
+<div align="center">
+  <h1>✨ @dansp/ui-met8-vue</h1>
+  <p>⚡ Componentes Vue 3 reutilizáveis para projetos com Metronic 8 e Bootstrap 5.3.</p>
+  
+  <div>
+    <img src="https://img.shields.io/npm/v/@dansp/ui-met8-vue" alt="Version">
+    <img src="https://img.shields.io/npm/l/@dansp/ui-met8-vue" alt="License">
+    <img src="https://img.shields.io/badge/Vue-3.x-42b883" alt="Vue 3">
+    <img src="https://img.shields.io/badge/Bootstrap-5.3-7952b3" alt="Bootstrap 5.3">
+  </div>
+</div>
 
-Componentes Vue 3 reutilizáveis para projetos com Metronic 8 e Bootstrap 5.3.
+![image](https://github.com/user-attachments/assets/91a96e84-b5ec-4e77-acbe-c3fe5e63ea60)
 
 ## 📦 Instalação
 
@@ -18,15 +28,9 @@ pnpm add @dansp/ui-met8-vue
 bun add @dansp/ui-met8-vue
 ```
 
-## 🔌 Configuração
+## 🔧 Configuração
 
-### 1. Instale as dependências necessárias:
-
-```bash
-npm install vue@^3.3.0 bootstrap@^5.3.0 @popperjs/core quill vue-the-mask cpf-cnpj-validator email-validator
-```
-
-### 2. Configure no seu projeto Vue 3
+### 1. Configure no seu projeto Vue 3
 
 #### Para projetos Vue 3 com Vite:
 
