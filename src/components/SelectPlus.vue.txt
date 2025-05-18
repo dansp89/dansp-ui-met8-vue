@@ -1,0 +1,219 @@
+<template>
+  <el-select-v2
+    v-bind="$attrs"
+    :model-value="modelValue"
+    @update:model-value="handleUpdateModelValue"
+    :options="options"
+    :disabled="disabled"
+    :clearable="clearable"
+    :filterable="filterable"
+    :multiple="multiple"
+    :multiple-limit="multipleLimit"
+    :placeholder="placeholder"
+    :loading="loading"
+    :remote="remote"
+    :loading-text="loadingText"
+    :no-match-text="noMatchText"
+    :no-data-text="noDataText"
+    :popper-class="popperClass"
+    :reserve-keyword="reserveKeyword"
+    :collapse-tags="collapseTags"
+    :collapse-tags-tooltip="collapseTagsTooltip"
+    :automatic-dropdown="automaticDropdown"
+    :clear-icon="clearIcon"
+    :fit-input-width="fitInputWidth"
+    :suffix-icon="suffixIcon"
+    :tag-type="tagType"
+    :validate-event="validateEvent"
+    :placement="placement"
+    @change="handleChange"
+    @visible-change="handleVisibleChange"
+    @remove-tag="handleRemoveTag"
+    @clear="handleClear"
+    @blur="handleBlur"
+    @focus="handleFocus"
+  >
+    <template #prefix v-if="$slots.prefix">
+      <slot name="prefix"></slot>
+    </template>
+    <template #empty v-if="$slots.empty">
+      <slot name="empty"></slot>
+    </template>
+  </el-select-v2>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { ElSelectV2 } from 'element-plus';
+
+export interface OptionType {
+  value: string | number | boolean | object;
+  label: string;
+  disabled?: boolean;
+  [key: string]: any;
+}
+
+export type Placement =
+  | 'top'
+  | 'top-start'
+  | 'top-end'
+  | 'bottom'
+  | 'bottom-start'
+  | 'bottom-end';
+
+export default defineComponent({
+  name: 'SelectPlus',
+  components: {
+    ElSelectV2,
+  },
+  inheritAttrs: false,
+  props: {
+    modelValue: {
+      type: [String, Number, Boolean, Object, Array],
+      default: () => (''),
+    },
+    options: {
+      type: Array as () => OptionType[],
+      default: () => [],
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+    clearable: {
+      type: Boolean,
+      default: false,
+    },
+    filterable: {
+      type: Boolean,
+      default: false,
+    },
+    multiple: {
+      type: Boolean,
+      default: false,
+    },
+    multipleLimit: {
+      type: Number,
+      default: 0,
+    },
+    placeholder: {
+      type: String,
+      default: 'Select',
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    },
+    remote: {
+      type: Boolean,
+      default: false,
+    },
+    noDataText: {
+      type: String,
+      default: 'No data',
+    },
+    noMatchText: {
+      type: String,
+      default: 'No matching data',
+    },
+    popperClass: {
+      type: String,
+      default: '',
+    },
+    reserveKeyword: {
+      type: Boolean,
+      default: false,
+    },
+    collapseTags: {
+      type: Boolean,
+      default: false,
+    },
+    collapseTagsTooltip: {
+      type: Boolean,
+      default: false,
+    },
+    automaticDropdown: {
+      type: Boolean,
+      default: false,
+    },
+    clearIcon: {
+      type: String,
+      default: 'circle-close',
+    },
+    fitInputWidth: {
+      type: Boolean,
+      default: false,
+    },
+    suffixIcon: {
+      type: String,
+      default: 'arrow-down',
+    },
+    tagType: {
+      type: String as () => 'success' | 'info' | 'warning' | 'danger' | '',
+      default: '',
+    },
+    validateEvent: {
+      type: Boolean,
+      default: true,
+    },
+    placement: {
+      type: String as () => Placement,
+      default: 'bottom-start',
+    },
+    loadingText: {
+      type: String,
+      default: 'Loading...',
+    },
+  },
+  emits: [
+    'update:modelValue',
+    'change',
+    'visible-change',
+    'remove-tag',
+    'clear',
+    'blur',
+    'focus',
+    'remote-method',
+  ],
+  setup(props, { emit }) {
+    // Event handlers
+    const handleUpdateModelValue = (value: any) => {
+      emit('update:modelValue', value);
+    };
+
+    const handleChange = (value: any) => {
+      emit('change', value);
+    };
+
+    const handleVisibleChange = (visible: boolean) => {
+      emit('visible-change', visible);
+    };
+
+    const handleRemoveTag = (tag: any) => {
+      emit('remove-tag', tag);
+    };
+
+    const handleClear = () => {
+      emit('clear');
+    };
+
+    const handleBlur = (event: Event) => {
+      emit('blur', event);
+    };
+
+    const handleFocus = (event: Event) => {
+      emit('focus', event);
+    };
+
+    return {
+      handleUpdateModelValue,
+      handleChange,
+      handleVisibleChange,
+      handleRemoveTag,
+      handleClear,
+      handleBlur,
+      handleFocus,
+    };
+  },
+});
+</script>

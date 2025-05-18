@@ -1,0 +1,57 @@
+# Source files
+src/
+
+# Example app
+/example
+
+# Tests
+/__tests__
+/coverage
+
+# Config files
+*.config.js
+*.config.ts
+vite.config.*
+vitest.config.*
+.eslintrc.*
+.prettierrc.*
+.editorconfig
+.gitignore
+.npmignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
+
+# Local development
+.history/
+.temp/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Keep these files
+!dist/
+!package.json
+!README.md
+!LICENSE
+!types.d.ts

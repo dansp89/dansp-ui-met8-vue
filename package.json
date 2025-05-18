@@ -1,0 +1,73 @@
+{
+  "name": "@dansp/ui-met8-vue",
+  "version": "1.0.0",
+  "description": "Componentes Vue 3 reutilizáveis para Metronic 8",
+  "main": "dist/dansp-ui-met8-vue.cjs.js",
+  "module": "dist/dansp-ui-met8-vue.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dansp-ui-met8-vue.es.js",
+      "require": "./dist/dansp-ui-met8-vue.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "preview": "vite preview",
+    "test": "vitest",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue3",
+    "components",
+    "ui",
+    "metronic",
+    "form"
+  ],
+  "author": "dansp <dansp@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dansp89/dansp-ui-met8-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dansp89/dansp-ui-met8-vue/issues"
+  },
+  "homepage": "https://github.com/dansp89/dansp-ui-met8-vue#readme",
+  "peerDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "element-plus": "^2.3.9",
+    "quill": "^2.0.2",
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "cpf-cnpj-validator": "^1.0.3",
+    "email-validator": "^2.0.4",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.47",
+    "@types/quill": "^2.0.10",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/compiler-sfc": "^3.3.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "sass": "^1.64.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.5.1",
+    "vitest": "^0.34.0",
+    "vue-tsc": "^1.8.0"
+  }
+}

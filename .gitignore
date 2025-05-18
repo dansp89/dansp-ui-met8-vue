@@ -1,0 +1,63 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dependency directories
+node_modules
+.pnp
+.pnp.js
+
+# Build files
+/dist
+/dist-ssr
+*.local
+
+# Cache
+.cache
+.temp
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage
+.nyc_output
+
+# Local development
+.history
+
+# Example app
+/example/node_modules
+/example/dist
+/example/.vite
+
+# IDE
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+
+# System Files
+.DS_Store
+Thumbs.db
