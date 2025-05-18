@@ -10,7 +10,7 @@
   </div>
 </div>
 
-![image](https://github.com/user-attachments/assets/91a96e84-b5ec-4e77-acbe-c3fe5e63ea60)
+![Screenshot dos componentes](docs/images/screenshot.png)
 
 ## 📦 Instalação
 

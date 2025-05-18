@@ -1,6 +1,6 @@
 {
-  "name": "@dansp/ui-met8-vue",
-  "version": "1.0.0",
+  "name": "dansp-ui-met8-vue",
+  "version": "1.0.1",
   "description": "Componentes Vue 3 reutilizáveis para Metronic 8",
   "main": "dist/dansp-ui-met8-vue.cjs.js",
   "module": "dist/dansp-ui-met8-vue.es.js",
@@ -41,6 +41,9 @@
     "url": "https://github.com/dansp89/dansp-ui-met8-vue/issues"
   },
   "homepage": "https://github.com/dansp89/dansp-ui-met8-vue#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
