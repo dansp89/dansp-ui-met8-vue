@@ -10,7 +10,7 @@
   </div>
 </div>
 
-![Screenshot dos componentes](docs/images/screenshot.png)
+![Screenshot dos componentes](https://raw.githubusercontent.com/dansp89/dansp-ui-met8-vue/bc4fa90fcdce069cf9e3a54de378d2c831fc41db/docs/images/screenshot.png)
 
 ## 📦 Instalação
 
