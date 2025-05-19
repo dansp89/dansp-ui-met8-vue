@@ -1,10 +1,10 @@
 <div align="center">
-  <h1>✨ @dansp/ui-met8-vue</h1>
+  <h1>✨ dansp-ui-met8-vue</h1>
   <p>⚡ Componentes Vue 3 reutilizáveis para projetos com Metronic 8 e Bootstrap 5.3.</p>
   
   <div>
-    <img src="https://img.shields.io/npm/v/@dansp/ui-met8-vue" alt="Version">
-    <img src="https://img.shields.io/npm/l/@dansp/ui-met8-vue" alt="License">
+    <img src="https://img.shields.io/npm/v/dansp-ui-met8-vue" alt="Version">
+    <img src="https://img.shields.io/npm/l/dansp-ui-met8-vue" alt="License">
     <img src="https://img.shields.io/badge/Vue-3.x-42b883" alt="Vue 3">
     <img src="https://img.shields.io/badge/Bootstrap-5.3-7952b3" alt="Bootstrap 5.3">
   </div>
@@ -16,16 +16,16 @@
 
 ```bash
 # Usando npm
-npm i @dansp/ui-met8-vue
+npm i dansp-ui-met8-vue
 
 # Usando yarn
-yarn add @dansp/ui-met8-vue
+yarn add dansp-ui-met8-vue
 
 # Usando pnpm
-pnpm add @dansp/ui-met8-vue
+pnpm add dansp-ui-met8-vue
 
 # Usando bun
-bun add @dansp/ui-met8-vue
+bun add dansp-ui-met8-vue
 ```
 
 ## 🔧 Configuração
@@ -47,7 +47,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
 // Importe os componentes
-import DanspUiMet8Vue from '@dansp/ui-met8-vue';
+import DanspUiMet8Vue from 'dansp-ui-met8-vue';
 
 const app = createApp(App);
 

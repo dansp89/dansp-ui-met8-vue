@@ -311,7 +311,7 @@
   
   <script lang="ts">
   import { defineComponent, ref, reactive } from "vue";
-  import SelectPlus from "@dansp/ui-met8-vue";
+  import SelectPlus from "dansp-ui-met8-vue";
   
   export default defineComponent({
     name: "dashboard-main",

@@ -1,6 +1,6 @@
 {
   "name": "dansp-ui-met8-vue",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Componentes Vue 3 reutilizáveis para Metronic 8",
   "main": "dist/dansp-ui-met8-vue.cjs.js",
   "module": "dist/dansp-ui-met8-vue.es.js",
@@ -28,10 +28,10 @@
     "vue3",
     "components",
     "ui",
-    "metronic",
+    "metronic8",
     "form"
   ],
-  "author": "dansp <dansp@example.com>",
+  "author": "DanSP <daniel.adg1337@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
